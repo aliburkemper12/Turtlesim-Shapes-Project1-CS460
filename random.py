@@ -8,25 +8,29 @@ class MinimalPublisher(Node):
         super().__init__('minimal_publisher')
         self.publisher_ = self.create_publisher(Twist, '/turtle1/cmd_vel', 10)
 
-    def timer_callback(self):
-        rate = 1
+    def draw_random(self):
         move = Twist()
+        # loop a few times to create pattern
+        # not too many to go off window
         for _ in range(5):
-            move.linear.x = 1.0  # Move forward
+            # first move = curve
+            # curve is linear and angular velocities at the same time
+            move.linear.x = 1.0 
             move.angular.z = 4.0
             self.publisher_.publish(move)
             time.sleep(1.0)
-            move.linear.x = 1.0  # Move forward
+            # second move = opposite curve
+            move.linear.x = 1.0
             move.angular.z = -4.0
             self.publisher_.publish(move)
             time.sleep(1.0)
 
 def main(args=None):
-    rclpy.init(args=args)
-    node = MinimalPublisher()
-    node.timer_callback()
-    node.destroy_node()
-    rclpy.shutdown()
+    rclpy.init(args=args) #initialize
+    node = MinimalPublisher() # create publisher node
+    node.draw_random() # call draw_random
+    node.destroy_node() # destroy node
+    rclpy.shutdown() # shutdown
 
 if __name__ == '__main__':
     main()
