@@ -58,17 +58,17 @@ to use publishers in ROS2. This assignment was built and ran on a Raspberry Pi 4
 
 2) In the first terminal run both of these commands:
 
-source /opt/ros/humble/setup.bash</br>
-ros2 run turtlesim turtlesim_node</br>
+  source /opt/ros/humble/setup.bash</br>
+  ros2 run turtlesim turtlesim_node</br>
 
 
 3) In the second terminal run these commands:
 
-source /opt/ros/humble/setup.bash</br>
-colcon build __symlink-install --packages-select hw1</br>
-source ~/ros2_ws/install/setup.bash</br>
-ros2 run hw1 <file></br>
-Ex: ros2 run hw1 circle
+  source /opt/ros/humble/setup.bash</br>
+  colcon build __symlink-install --packages-select hw1</br>
+  source ~/ros2_ws/install/setup.bash</br>
+  ros2 run hw1 <file></br>
+  Ex: ros2 run hw1 circle
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
