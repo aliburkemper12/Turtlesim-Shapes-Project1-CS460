@@ -54,7 +54,7 @@ to use publishers in ROS2. This assignment was built and ran on a Raspberry Pi 4
 
 ### How to Run
 
-1) Install ros2 and turtlesim. Create a workspace with name hw1. Create a package.
+1) Install ros2 and turtlesim. Create a workspace with name hw1. Create a package. Add these files into /src
 
 2) In the first terminal run both of these commands:
 
