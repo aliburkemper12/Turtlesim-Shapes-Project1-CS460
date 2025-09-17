@@ -12,7 +12,6 @@
     First assignment working with ROS2 and Turtlesim on a Raspberry Pi 4.
     <br />
     <br />
-    <a href="https://aliburkemper.dev">View Live Site</a>
   </p>
 </div>
 
@@ -49,21 +48,21 @@ to use publishers in ROS2. This assignment was built and ran on a Raspberry Pi 4
 
 ### Built With
 
-* https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue
+* <img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" /> 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### How to Run
 
-Install ros2 and turtlesim. Create a workspace with name hw1. Create a package.
+1) Install ros2 and turtlesim. Create a workspace with name hw1. Create a package.
 
-In the first terminal run both of these commands:
+2) In the first terminal run both of these commands:
 
 source /opt/ros/humble/setup.bash
 ros2 run turtlesim turtlesim_node
 
 
-In the second terminal run these commands:
+3) In the second terminal run these commands:
 
 source /opt/ros/humble/setup.bash
 colcon build __symlink-install --packages-select hw1
@@ -81,7 +80,6 @@ Ex: ros2 run hw1 circle
 
 Ali Burkemper - aliburkemper12@gmail.com
 
-Project Link: [https://github.com/aliburkemper12/personal-portfolio](https://github.com/aliburkemper12/personal-portfolio)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
